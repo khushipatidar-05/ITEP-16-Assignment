@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #414141;
+    }
+</style>
+<body>
+    <!-- 
+      img ki ling copy krne ke liye copy img address kre 
+      ya fir open new tape and pure url copy kre
+    -->
+    <img src="https://images.pexels.com/photos/34533765/pexels-photo-34533765.jpeg?_gl=1*8xf95i*_ga*MjAwMDU1NDI2MC4xNzU3ODQ4MTk4*_ga_8JE65Q40S6*czE3NjUyMzg0MzYkbzIkZzEkdDE3NjUyMzk2ODckajU5JGwwJGgw" width="900px" height="700" alt="no image">
+    <!-- 
+    ./ mtlb current folder
+    ../ mtlb ek folder back jana
+    folder name likhna  jb ek folder aage jna ho  
+      -->
+    <img src="./HTMLphot.avif" width="900px"height="700px" alt="no image">
+    <picture>
+      <source media="(min-width: 660px)" srcset="./HTMLphot.avif" />
+      <source media="(min-width: 460px)" srcset="./HTMLphoto2.avif" />
+      <img src="HTMLphot.avif"  width="900px"height="700px"alt="no image">
+    </picture>
+
+    <!-- an image map generator -->
+     <img src="HTMLphoto.avif" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="294,125,193,56" shape="rect">
+    <area onclick="two()"  target="" alt="" title="" href="" coords="158,264,89,208" shape="rect">
+</map>
+<script>
+  function one(){
+    alert("you clicked on one")
+  }
+  function two(){
+    alert("you clicked on two")
+  }
+  
+</script>
+</body>
+</html>
